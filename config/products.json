@@ -1,0 +1,27 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "titulo": "Mouse",
+            "descricao": "Mouse Razer muito bom",
+            "img": "/images/product1.jpg",
+            "preco": 45
+        },
+
+        {
+            "id": 2,
+            "titulo": "MousePad",
+            "descricao": "MousePad Razer muito bom para profissionais",
+            "img": "/images/product2.jpg",
+            "preco": 75
+        },
+
+        {
+            "id": 3,
+            "titulo": "Combo: Mouse e MousePad",
+            "descricao": "Um combo profissional para gamers",
+            "img": "/images/product3.jpg",
+            "preco": 120
+        }
+    ]
+}

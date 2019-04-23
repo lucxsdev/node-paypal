@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>LOJA PAYPAL</title>
+</head>
+<body>
+    <div>
+       <header class="header flex flex-center"> 
+            <h1 class="titulo">
+            <a href="/">LOJA PAYPAL</a>
+            </h1>
+       </header>
+        <br/><br/> 
+
+        <div class="flex horizontal">
+            <% for(var i=0; i<products.length; i++){%>
+
+                <div class="flex-1 flex-vertical">
+                    <div class="flex flex-center">
+                        <img src="<%= products[i].img %>" class="img-produto"/>
+                    </div>
+                    <br>
+                    <div>
+                        <h1 class="titulo-produto text-center"> <%= products[i].titulo %> </h1>
+                        <p class="descricao-produto text-center"> <%= products[i].descricao %> </p>
+
+                        <h2 class="preco-produto text-center"> 
+                        <span>R$</span>
+                        <%= products[i].preco %> 
+                        </h2>
+
+                        <form action="/buy?id=<%= products[i].id %>" method="POST" class="flex-center" >
+                            <input class="btn-comprar flex flex-center" type="submit" value="COMPRE AGORA" />
+                        </form>
+                    </div>
+                </div>
+
+            <% } %>
+        </div>
+        <br/>  <br/> 
+    </div>
+</body>
+</html>
